@@ -60,6 +60,7 @@ plugin.tx_dlf_pageview {
     settings {
         features =
         elementId = tx-dfgviewer-map
+        progressElementId = tx-dfgviewer-page-progress
     }
 }
 
