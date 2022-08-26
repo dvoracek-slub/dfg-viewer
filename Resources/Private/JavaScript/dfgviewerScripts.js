@@ -189,6 +189,12 @@ $(document).ready(function () {
         }));
     });
 
+    // Update URL in page grid button
+    document.body.addEventListener('tx-dlf-stateChanged', e => {
+        $('#dfgviewer-enable-grid-view')
+            .attr('href', tx_dlf_loaded.makePageUrl(e.detail.page, true));
+    });
+
     // Finally all things are settled. Bring back animations a second later.
     setTimeout(function () {
         localStorage.clear();
